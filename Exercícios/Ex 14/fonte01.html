@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-css.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            /* Quando aparece mais de um tipo de letra (família da fonte), como acima, quer dizer temos a combinação safe fonts, ou seja, uma combinação de algumas fontes, para caso uma não funcione no dispositivo outra possa ser utilizada. Para saber mais safe fontes, basta pesquisar no google css web safe fonts. */
+            /* Algumas formas de fonte são as serifadas (com serifas), as sans-serif (sem serifas), as monoespaçadas, as handwriting (imitam a escrita à mão) e as display (comemorativas). */
+            font-size: 1em;
+            /* Medidas Absolutas: cm, mm, in (polegadas), px (pixels), pt (pontos), pc.
+               Medidas Relativas: em (altura do m maiúsculo), ex (altura do x minúsculo), rem, vw (viewport width - largura do tamanho da tela), vh (viewport height - altura do tamanho da tela), %.
+            OBS: geralmente, 16px = 1em (padrão dos navegadores); recomenda-se o uso de px e de em. */
+            font-weight: bolder;
+           /* Peso da fonte. Tem-se as opções 100-900 (de 100 em 100) e ainda lighter, normal, bold e bolder. */
+            font-style: italic;
+            text-decoration: underline;
+        }
+        
+        h1, h2{
+            /* font-family: 'Work Sans', sans-serif;
+               font-weight: bolder; (peso da fonte em negrito)
+               font-size: 3em;
+               font-style: italic;
+            Pode-se usar também um Shorthand font (abreviação para declarar as características da fonte) na ordem: 
+            font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        /* Quando a fonte (ou outra aplicação) é um nome composto, usa-se apóstrofo ou aspas para indicá-la. */
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur fuga adipisci deserunt? Excepturi quidem eaque atque dicta deleniti, inventore nihil ipsum cupiditate temporibus quo corporis voluptatum assumenda nostrum perspiciatis! Non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illo a commodi. Corporis sequi, id veniam enim optio alias fuga deserunt sit officia nulla, praesentium facilis est. Sint, nostrum. Eius.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus cupiditate asperiores sunt explicabo quos reprehenderit, distinctio quis id amet, numquam quae minima et consectetur ipsum quibusdam nulla! Mollitia, explicabo dolorum?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui similique, aliquid porro amet molestias numquam deleniti assumenda! Error ea ipsum est blanditiis a aliquam similique! Numquam ipsam maiores quasi non!</p>
+</body>
+</html>

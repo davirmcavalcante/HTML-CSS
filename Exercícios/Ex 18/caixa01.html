@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-css.ico" type="image/x-icon">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{ /* box-level */
+            /* OBS: podemos mudar a configuração do h1 de box-level para inline-level usando "display: inline;", porém, nesse caso, não podemos controlar certas propriedades como largura e altura. */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /*
+            border-width: 10px;
+            border-style: solid; - Os mais usados são solid(sólido, uniforme), dashed(tracejado) e dotted(pontilhado). Porém também há outros, como o double(linha dupla), o groove(usa 3D), etc.
+            border-color: darkslategray;
+            Note: podemos simplificar a escrita do border (shorthand), colocando apenas os atributos na ordem correta. Veja a seguir.
+            */
+            border: 10px solid darkslategray;
+
+            /*
+            padding-top: 10px; - Padding é a parte da borda para dentro da caixa. 
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            Note: podemos simplificar a escrita do padding colocando apenas os atributos, na mesma ordem que está acima. Veja a seguir.
+            */
+            padding: 10px; /* colocando apenas um valor todos os quatro atributos recebem esse mesmo valor. Já, colocando dois valores, o primeiro é usado para a parte de cima e de baixo e o segundo para as laterais (direita e esquerda).
+            /* OBS: deve-se configurar as bordas, padding, margens no sentido horário. */
+
+            /* margin: auto; - Quando se trata de caixas, o "auto;" centraliza-as. Já com textos, usa-se "text-align: center;".  
+            margin-top: 20px; - Margin é a parte da borda para fora da caixa. 
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            Note: também podemos simplificar o uso de margens com a ordem acima. Veja a seguir.
+            */
+            margin: 20px auto 40px auto;
+
+            /*
+            outline-width: 5px; - O outline é uma linha do lado de fora da borda. Ela pode ficar entre a borda e a margem, mas também pode estrapolá-la. 
+            outline-style: dashed;
+            outline-color: salmon;
+            Note: analogamente, veja a simplificação do outline abaixo.
+            */
+            outline: 5px dashed salmon;
+
+        }
+
+        /*OBS: no google chrome, podemos clicar com o botão direito e inspecionar ou ir em ferramentas e clicar em ferramentas do desenvolvedor para abrir o dev tools. No dev tools, podemos testar o site e suas propriedades, como as cores, as bordas, margens e até mesmo o código. Porém ele só se aplica naquele momento, sempre que a página ou o código da pagina for atualizado no código principal a página web é atualizada. Porém pode-se testar o que desejar do site, copiar os itens que ficaram bons e colocá-los no código original. */
+
+        a{ /* inline-level */
+            /* OBS: podemos transformar o seletor a de inline-leve para box-level usando "display: block". Pode-se também usar outras formas que misturam as características dos dois modelos. */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas <a href="#">links são exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

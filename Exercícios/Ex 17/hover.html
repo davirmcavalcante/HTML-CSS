@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-css.ico" type="image/x-icon">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p{ /* Parágrafo que está dentro, ou seja, que é filho da div. */
+            display: none; /* Esconde o parágrafo */
+        }
+        /* Classe/elemento > classe'/elemento' indica que classe'/elemento' é um filho(children) de classe/elemento, ou seja, quer dizer que classe'/elemento' está dentro de classe/elemento. */
+        div:hover{
+            color: blue;
+        } 
+        /* O hover refere-se à interação com o mouse.
+           O ":" indica uma pseudo-class e serve para dizer um estado para a classe ou para o elemento (seletor). */
+        div:hover > p{
+            display: block; /* Mostra o parágrafo dentro da div */
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo.</p>
+    <div>
+        Passe o mouse aqui.
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo.</p>
+</body>
+</html>

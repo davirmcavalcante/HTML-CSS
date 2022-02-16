@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-css.ico" type="image/x-icon">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ /* Configurações globais de CSS */
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(to bottom, #4BCCBF 30%, #97C2BE, #004740 85%, #6F8F8C);
+            background-attachment: fixed;
+        }
+    </style>
+    <!-- O background-image é usado para conseguir utilizar gradientes, ou seja, fazer "degra Ds". Podemos usar ele na forma linear-gradiente, radial-gradient, etc. O primeiro parâmetro da função indica a direção do gradiente e pode ser colocado na forma escrita - com o nome da direção [to bottom (para baixo), to right(para a direita), etc.} - ou em graus (deg), e, após isso, podemos colocar quantas cores quisermos nos próximos parâmetros. No caso do radial-gradient, coloca-se circle no primeiro parâmetro. Ademais, pode-se colocar a quantidade de determinada cor no gradiente indicando a quantidade em porcentagem após indicar a cor. -->
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+</body>
+</html>

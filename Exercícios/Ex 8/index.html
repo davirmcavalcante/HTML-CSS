@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir um site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!-- Os sources devem ficar em ordem, acima da tag img. Utilizamos esse método para ajustar a imagem aos diversos dispositivos que os usuarios usem.-->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+     <!-- <audio src="midia/happy-mistake.mp3" controls autoplay></audio> -->
+     <audio preload="metadata" autoplay controls loop>
+        <source src="audios/happy-mistake.mp3" type="audio/mpeg">
+        <source src="audios/happy-mistake.ogg" type="audio/ogg">
+        <source src="audios/happy-mistake.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="audios/happy-mistake.mp3"> clique aqui para baixar o arquivo mp3.</a></p>
+     </audio>
+     <!-- Analogamente, o source aqui deve ser mantido em ordem. Colocamos 3 opções de audio para melhor compatibilidade com os dispositivos. Porém, a opção wav não é recomendada, pois é para um arquivo geralmente muito pesado, comprometendo o site.-->
+
+     <h1>Inserindo vídeos hospedados localmente</h1>
+     <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+     <!-- <video src="videos/pexelsvideo-ed.m4v" width="500" controls></video> -->
+
+     <video width="560" height="400" poster="imagens/cha-550.jpg"" controls>
+        <source src="videos/pexelsvideo-ed.m4v" type="video/mp4">
+        <source src="videos/pexelsvideo-ed.webm" type="video/webm">
+        <source src="videos/pexelsvideo-ed.ogv" type="video/ogg">
+        <source src="videos/pexelsvideo.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+     </video>
+     <!-- Os videos hospedados localmente utilizam os dados do seu site e mais armazenamento, logo pode prejudicar a velocidade, o tráfego e aumentar os custos do site. Portando, é preciso ter atenção ao lidar com isso.-->
+
+     <h1>Inserindo vídeos do YouTube</h1>
+     <!-- Vai no vídeo do youtube, clica em compartilhar e copia o código html com tag iframe -->
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/BDcsZCThm4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <!-- Note: o YouTube é o segundo maior buscador da internet, perdendo apenas para o google, logo usar vídeos do youtube aumenta a relevância do seu site no google. Além disso, você não gasta dados do seu site e nem armazenamento, o que melhora a sua qualidade e eficiência.Uma alternativa ao Youtube é o vimeo, o qual pode gerenciar a privacidade e tem uma ótima qualidade, porém código não é tão bom quanto o do youtube, podendo causar lags e travar o vídeo. -->
+
+</body>
+</html>

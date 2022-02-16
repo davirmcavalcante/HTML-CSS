@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-css.ico" type="image/x-icon">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love'; /* aqui pode-se colocar o nome que quiser */
+            src: url('chasing_hearts/Chasing\ Hearts\ -\ OTF.otf') format('opentype'), url('chasing_hearts/Chasing\ Hearts\ -\ TTF.ttf') format('truetype');
+            font-style: normal;
+            font-weight: normal;
+            /* Tipos de format():
+            - opentype(otf)
+            - truetype(ttf)
+            - embedded-opentype
+            - truetype aat (apple advanced typography)
+            - svg */
+        }
+        /* Para a fonte externa funcionar é preciso que se faça o @font-face, com as configurações da fonte. Além disso, é importante verificar se a fonte possui acentuação, minúsculas e maiúsculas, etc., quando estiver escolhendo-a.*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'Love', Times, serif; /* Note que o nome da fonte é o mesmo colocado em font-face. */
+            font-weight: bold;
+            font-size: 3em;
+        }
+        /* OBS: para capturar fontes em sites, que estejam sendo usadas com html/css, pode-se usar a extensão ninja fonts do google chrome. Já para fontes que estejam em imagens, pode-se usar os sites whatfontis.com, fontsquirrel.com ou myfonts.com. */
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur soluta amet saepe ducimus ex et, voluptates ipsam, ipsum ut eveniet aut hic explicabo laudantium error nemo! Et hic laboriosam magni?</p>
+</body>
+</html>

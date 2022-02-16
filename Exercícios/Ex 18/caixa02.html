@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-css.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            box-shadow: inset 3px 2px 14px 6px rgba(0, 0, 0, 0.466); /* - Sombra da caixa (no caso, inset, ou seja, sombra interna à caixa). Parâmetros: (inset) (eixo x) (eixo y) (blur - embassamento) (spread - espalhamento) (color). */
+        }
+        nav{
+            background-color: rgb(104, 104, 104);
+            padding: 4px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.452); /* - Sombra da caixa (no caso, outset, ou seja, sombra externa à caixa - não precisa declarar quando é externa):
+            (Deslocamento horizontal) (Des. vertical) (Embassamento) (Espalhamento) (Cor). 
+            Caso seja sombra interna, deve-se declarar inset como primeiro parâmetro. */
+            /* OBS: pode-se testar e pegar a sombra diretamento pelo dev tools. */
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; /* Raio da borda. Shorthand: (top left) (top right) (bottom right) (bottom left). Pode-se usar apenas dois parâmetros também, o primeiro responsável pelo top left e bottom right e o segundo pelo top right e bottom left. Perceba as pontas arredondadas das bordas.*/
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.404);
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(148, 148, 148);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho. -->
+        <h1>Meu site</h1>
+        <nav> <!-- Navegador. -->
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo principal. -->
+        <section id="assuntos">
+            <p>Esporte Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur laboriosam impedit explicabo rem, repudiandae voluptate libero doloribus ratione reiciendis esse quibusdam ex eius odio labore porro quas sunt perferendis ipsam.</p>
+                <aside> <!-- Texto periférico. -->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé. -->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+    <!-- OBS: as grouping tags podem ser colocadas em qualquer ordem, ou seja, pode-se escolher qual tag vai ficar dentro da outra e ainda o conteúdo que vai estar em cada tag. -->
+</body>
+</html>

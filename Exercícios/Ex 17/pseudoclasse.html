@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-css.ico" type="image/x-icon">
+    <title>Pseudo-classes</title>
+    <style>
+        /* As pseudo-classes referem-se aos estados de elementos/classes. */
+        div{
+            display: inline-block; /* Elementos na mesma linha. */
+            background-color: lightgray;    
+            border: 1px solid black; /* Note o handcut */
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:hover{
+            background-color: yellow;
+        }
+        /* O hover é a interação com o mouse, ou seja, "quando eu passar o mouse por cima...". (No caso, ilumina a div quando passa o mouse em cima). */
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <!-- Lembre: "#" é id, "." é class e ":" é pseudo-class. -->
+</body>
+</html>
