@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-css.ico" type="image/x-icon">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative; /* é o padrão, geralmente usamos o position para ajustar a posição com mais flexibilidade do que o margin. */
+            height: 96vh;
+            padding 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute; /* com o position absolute podemos usar o top e left para ajustar a posição da caixa. */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;
+            top: 50%; 
+            /* veja que a caixa foi posicionada a 50% da direita e do topo, porém com relação a ponta esquerda e do topo da caixa. Para colocar em relação ao centro usamos o método transform. */
+            transform: translate(-50%, -50%); /* translada o conteudo 50% para esquerda e 50% para cima */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    <!-- Note: container é o de fora e conteudo o de dentro. -->
+</body>
+</html>
