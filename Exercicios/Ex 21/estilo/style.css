@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps; /* Note que todas as letras são maiúsculas, sendo que as inicias são maiores, destacadas, mas sem chamar tanta atenção. Poderíamos também usar o text-transform: uppercase;, porém todas as letras seriam maiúsculas e maiores, de forma mais gritante. */
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh; /* Perceba o espaço que fica na parte de cima e de baixo do texto em cada section. */
+    padding-left: 30px;
+    line-height: 2em; /* Aumenta o espaçamento entre as linhas em 2 vezes. */
+
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
