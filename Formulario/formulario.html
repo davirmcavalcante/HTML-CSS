@@ -4,13 +4,17 @@
 <head>
     <title>Formulário de contato</title>
     <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
     <script>
         function envia(){
-            var nome = document.getElementbyId("IDnome");
+            var nome = document.getElementById("IDnome");
             if (nome.value != ""){
-                window.alert("Obrigado sr(a) " + nome.value + " os seus dados foram enviados com sucesso");
+                window.alert("Obrigado, sr(a) " + nome.value + ", os seus dados foram enviados com sucesso!");
+            }
+            else{
+                window.alert('Insira seu nome')
             }
         }
     </script>
@@ -28,14 +32,14 @@
                 <label>Assunto</label>
                 <input type="text" size="40" id="assunto" placeholder="Assunto aqui"/>
             </div></br>
+            <div class="">
+                <label for="">E-mail</label>
+                <input type="text" placeholder="usuario@mail.com" name="email"/>
+            </div><br>
             <div>
-                <div class="">
-                    <label for="">e-mail</label>
-                    <input type="text" placeholder="usuario@mail.com" name="email"/>
-                </div>
-                <label>Mensagem</label></br></br>
-                <textarea placeholder="Descreva o problema" id="mensagem" rows="5" cols=30></textarea>
-            </div>
+            <label>Mensagem</label></br>
+            <textarea id="mensagem" placeholder="Descreva o problema" rows="5" cols=30></textarea>
+            </div><br><br>
             <div>
                 <input type="submit" name="submit" value="Enviar" id="enviar" class="botao_enviar" onclick="envia()"/>
             </div>

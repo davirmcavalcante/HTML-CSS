@@ -2,12 +2,12 @@
 
 /*Formatação de formulário*/
 
-.input{
+input{
     width: calc(100% - 20px);
     padding: 10px;
 }
 
-.textarea{
+textarea{
     width: calc(100% - 20px);
     padding: 10px;
 }
@@ -17,15 +17,20 @@
     margin: 0 auto;
 }
 
-.h4{
+h4{
     text-align: center;
 }
 
 .botao_enviar{
-    border: solid 1px #02b81a;
+    border: solid 2px #f1f122ce; 
     background-color: blue;
     color: white;
     text-decoration: none;
     padding: 20px;
     width: 40%;
 }
+.botao_enviar:hover{
+    background-color: rgba(13, 13, 255, 0.863);
+    text-decoration: underline;
+}
+
